@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Rename-Item -Path \"c:\\\\Users\\\\chloe\\\\Downloads\\\\Portolio_CR\\\\assets\\\\video\\\\README.txt\" -NewName \"readme.txt\" -Confirm:$false)",
+      "PowerShell(Rename-Item -Path \"c:\\\\Users\\\\chloe\\\\Downloads\\\\Portolio_CR\\\\img\\\\unasat logo.png\"  -NewName \"unasat-logo.png\"  -Confirm:$false)"
+    ]
+  }
+}

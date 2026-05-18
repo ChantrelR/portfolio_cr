@@ -145,8 +145,18 @@ ul { list-style: none; }
 }
 
 .unasat-seal {
+  height: 13px;
+  width: auto;
   display: inline-block;
   vertical-align: middle;
+  opacity: 0.82;
+}
+
+.unasat-footer-logo {
+  height: 15px;
+  width: auto;
+  opacity: 0.6;
+  filter: saturate(0.55) brightness(0.85);
 }
 
 .nav__links {
