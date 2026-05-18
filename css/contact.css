@@ -1,0 +1,148 @@
+/* ============================================================
+   CONTACT.CSS — Contact Page Styles · Luxury Cream & Blush
+   ============================================================ */
+
+.contact-page { position: relative; z-index: 1; }
+
+.contact-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 2.5rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.glass-form {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(225, 193, 182, 0.35);
+  border-radius: var(--radius-lg);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  box-shadow: 0 4px 32px rgba(142, 126, 115, 0.1), 0 1px 0 rgba(255,255,255,0.9) inset;
+  padding: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fade-up 0.7s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.form-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--blush-mid);
+  font-weight: 500;
+}
+
+.form-input {
+  background: rgba(249, 246, 241, 0.65);
+  border: 1px solid rgba(225, 193, 182, 0.38);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.2rem;
+  color: var(--deep-mocha);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 300;
+  transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+  outline: none;
+  width: 100%;
+}
+.form-input::placeholder { color: var(--antique-silver); }
+.form-input:focus {
+  border-color: var(--blush-mid);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0 3px rgba(196, 144, 124, 0.1);
+}
+.form-input--textarea { resize: vertical; min-height: 130px; }
+
+.form-feedback {
+  font-size: 0.875rem;
+  text-align: center;
+  min-height: 1.4em;
+  transition: color var(--transition);
+}
+.form-feedback--success { color: #7aaa8a; }
+.form-feedback--error   { color: #c07070; }
+
+/* --- Sidebar --- */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fade-up 0.7s 0.15s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+.info-card {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(225, 193, 182, 0.35);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  padding: 1.75rem 2rem;
+  box-shadow: 0 2px 16px rgba(142, 126, 115, 0.08);
+}
+
+.info-card__title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--deep-mocha);
+  margin-bottom: 1.25rem;
+}
+
+.info-list { display: flex; flex-direction: column; gap: 1.1rem; }
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+}
+.info-item__icon { font-size: 1.35rem; line-height: 1; margin-top: 0.1rem; flex-shrink: 0; }
+.info-item strong { display: block; font-size: 0.88rem; font-weight: 500; color: var(--deep-mocha); margin-bottom: 0.15rem; }
+.info-item p { font-size: 0.8rem; color: var(--text-muted); }
+
+.info-card--quote {
+  background: linear-gradient(145deg, rgba(225, 193, 182, 0.15), rgba(214, 189, 159, 0.1));
+  border-color: rgba(196, 144, 124, 0.22);
+}
+.info-card--quote blockquote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--blush-mid);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   MEDIA QUERIES
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .contact-layout { grid-template-columns: 1fr; }
+  .contact-info { flex-direction: row; flex-wrap: wrap; }
+  .info-card { flex: 1 1 280px; }
+}
+
+@media (max-width: 768px) {
+  .contact-layout { padding: 1rem 1.5rem 4rem; gap: 2rem; }
+  .glass-form { padding: 2rem; }
+}
+
+@media (max-width: 480px) {
+  .contact-info { flex-direction: column; }
+  .info-card { flex: 1 1 auto; }
+  .glass-form { padding: 1.5rem 1.25rem; }
+}
+
+@media (min-width: 1200px) {
+  .contact-layout { max-width: 1200px; grid-template-columns: 1fr 420px; }
+}

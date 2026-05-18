@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Chantrel Ritfeld</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/about.css" />
+  </head>
+  <body>
+    <div class="bg-grain"></div>
+
+    <nav class="nav">
+      <div class="nav__brand">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-star">✦</span> Chantrel
+        </a>
+        <span class="nav__affiliation">
+          <svg class="unasat-seal" width="11" height="11" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="10.5" stroke="#C4907C" stroke-width="1.2"/>
+            <text x="12" y="16.5" text-anchor="middle" font-family="Georgia,serif" font-size="9.5" fill="#C4907C" font-style="italic">U</text>
+          </svg>
+          UNASAT · Software Engineering
+        </span>
+      </div>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="work.html" class="nav__link">Work</a></li>
+        <li><a href="about.html" class="nav__link nav__link--active">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <main class="about-page">
+      <header class="page-header">
+        <span class="hero__eyebrow">Get to Know Me</span>
+        <h1 class="page-header__title">About <em>Chantrel</em></h1>
+        <p class="page-header__sub">
+          Baker. Builder. Problem solver. Here's a little more about who I am
+          and what drives me.
+        </p>
+      </header>
+
+      <!-- Bio + Stats -->
+      <section class="bio-section">
+        <div class="bio-section__text">
+          <h2 class="section-title">My <em>Story</em></h2>
+          <p>
+            I'm Chantrel Ritfeld — a Software Engineering student at UNASAT in
+            Suriname, currently studying Programming Fundamentals. I'm passionate
+            about building things that have a real impact, whether that's writing
+            clean code or layering a perfect buttercream cake.
+          </p>
+          <p>
+            My journey into tech started with curiosity: I wanted to understand
+            how the devices around me actually worked. That curiosity led me to
+            Arduino, to HTML and CSS, and eventually to the broader world of
+            software engineering. Every project I take on teaches me something new.
+          </p>
+          <p>
+            Outside of code, baking is where I recharge. There's a quiet precision
+            to it — measuring, timing, adjusting — that mirrors the problem-solving
+            mindset I bring to programming. Both worlds demand patience, creativity,
+            and an eye for detail.
+          </p>
+        </div>
+
+        <div>
+          <div class="stats-row">
+            <div class="stat-item">
+              <span class="stat-item__number">2+</span>
+              <span class="stat-item__label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-item__number">♻️</span>
+              <span class="stat-item__label">EcoBigi</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-item__number">🧁</span>
+              <span class="stat-item__label">Baking</span>
+            </div>
+          </div>
+
+          <div class="about__cards">
+            <div class="mini-card">
+              <span class="mini-card__icon">🎓</span>
+              <h3>UNASAT</h3>
+              <p>Software Engineering · Programming Fundamentals</p>
+            </div>
+            <div class="mini-card">
+              <span class="mini-card__icon">🌱</span>
+              <h3>Sustainability</h3>
+              <p>Using tech to create greener habits in everyday life.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills-section">
+        <h2 class="section-title">Skills &amp; <em>Interests</em></h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">💻</span>
+              <h3 class="skill-card__title">Tech Stack</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Arduino C++</span>
+              <span class="skill-tag">Git</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">⚙️</span>
+              <h3 class="skill-card__title">Hardware</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Arduino Uno</span>
+              <span class="skill-tag">Servo Motors</span>
+              <span class="skill-tag">IR Sensors</span>
+              <span class="skill-tag">Ultrasonic Sensor</span>
+              <span class="skill-tag">LCD Display</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">🧁</span>
+              <h3 class="skill-card__title">Baking</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Layer Cakes</span>
+              <span class="skill-tag">Cupcakes</span>
+              <span class="skill-tag">Swiss Meringue</span>
+              <span class="skill-tag">Fondant</span>
+              <span class="skill-tag">Flavour Design</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-card__header">
+              <span class="skill-card__icon">✨</span>
+              <h3 class="skill-card__title">Soft Skills</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Attention to Detail</span>
+              <span class="skill-tag">Creativity</span>
+              <span class="skill-tag">Curiosity</span>
+              <span class="skill-tag">Persistence</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Section — drop demo.mp4 into assets/video/ to activate -->
+      <section class="video-section">
+        <h2 class="section-title">In <em>Action</em></h2>
+        <p class="video-section__sub">Watch the projects and passions come to life.</p>
+        <div class="video-frame">
+          <div class="video-wrap">
+            <video
+              class="demo-video"
+              controls
+              preload="metadata"
+            >
+              <source src="assets/video/demo.mp4" type="video/mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+            <div class="video-placeholder" id="videoPlaceholder">
+              <span class="video-placeholder__icon">🎬</span>
+              <p class="video-placeholder__text">Video Coming Soon</p>
+              <p class="video-placeholder__hint">Drop demo.mp4 into assets/video/ to activate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer__copy">✦ Chantrel Ritfeld &nbsp;·&nbsp; Programming Fundamentals</p>
+        <div class="footer__unasat">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="10.5" stroke="#B8B2AA" stroke-width="1.2"/>
+            <text x="12" y="16.5" text-anchor="middle" font-family="Georgia,serif" font-size="9.5" fill="#B8B2AA" font-style="italic">U</text>
+          </svg>
+          UNASAT · Software Engineering · Suriname
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/about.js"></script>
+  </body>
+</html>

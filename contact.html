@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Chantrel Ritfeld</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <div class="bg-grain"></div>
+
+    <nav class="nav">
+      <div class="nav__brand">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-star">✦</span> Chantrel
+        </a>
+        <span class="nav__affiliation">
+          <svg class="unasat-seal" width="11" height="11" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="10.5" stroke="#C4907C" stroke-width="1.2"/>
+            <text x="12" y="16.5" text-anchor="middle" font-family="Georgia,serif" font-size="9.5" fill="#C4907C" font-style="italic">U</text>
+          </svg>
+          UNASAT · Software Engineering
+        </span>
+      </div>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="work.html" class="nav__link">Work</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--active">Contact</a></li>
+      </ul>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <main class="contact-page">
+      <header class="page-header">
+        <span class="hero__eyebrow">Let's Connect</span>
+        <h1 class="page-header__title">Say <em>Hello</em></h1>
+        <p class="page-header__sub">
+          Whether you have a question, a collaboration idea, or just want to
+          chat — I'd love to hear from you.
+        </p>
+      </header>
+
+      <section class="contact-layout">
+        <div class="contact-form-wrap">
+          <div class="glass-form">
+            <div class="form-group">
+              <label class="form-label" for="name">Your Name</label>
+              <input
+                class="form-input"
+                type="text"
+                id="name"
+                placeholder="e.g. Amara Johnson"
+                autocomplete="name"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address</label>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input
+                class="form-input"
+                type="text"
+                id="subject"
+                placeholder="What's it about?"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea
+                class="form-input form-input--textarea"
+                id="message"
+                rows="5"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+            <button class="btn btn--primary btn--full" id="sendBtn">
+              Send Message ✦
+            </button>
+            <p class="form-feedback" id="formFeedback"></p>
+          </div>
+        </div>
+
+        <aside class="contact-info">
+          <div class="info-card">
+            <h2 class="info-card__title">Quick Info</h2>
+            <ul class="info-list">
+              <li class="info-item">
+                <span class="info-item__icon">🎓</span>
+                <div>
+                  <strong>UNASAT</strong>
+                  <p>Software Engineering</p>
+                </div>
+              </li>
+              <li class="info-item">
+                <span class="info-item__icon">📁</span>
+                <div>
+                  <strong>GitHub</strong>
+                  <p>See my source code</p>
+                </div>
+              </li>
+              <li class="info-item">
+                <span class="info-item__icon">♻️</span>
+                <div>
+                  <strong>EcoBigi Project</strong>
+                  <p>Arduino recycling machine</p>
+                </div>
+              </li>
+              <li class="info-item">
+                <span class="info-item__icon">🧁</span>
+                <div>
+                  <strong>Baking Portfolio</strong>
+                  <p>Cakes &amp; cupcake creations</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="info-card info-card--quote">
+            <blockquote>
+              "The secret ingredient is always a little bit of love."
+            </blockquote>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <p class="footer__copy">✦ Chantrel Ritfeld &nbsp;·&nbsp; Programming Fundamentals</p>
+        <div class="footer__unasat">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="10.5" stroke="#B8B2AA" stroke-width="1.2"/>
+            <text x="12" y="16.5" text-anchor="middle" font-family="Georgia,serif" font-size="9.5" fill="#B8B2AA" font-style="italic">U</text>
+          </svg>
+          UNASAT · Software Engineering · Suriname
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
